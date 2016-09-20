@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+//        let context = appDelegate.persistentContainer.newBackgroundContext()
+//        let request: NSFetchRequest<User> = User.fetchRequest()
+//        do {
+//            let searchResults = try context.fetch(request)
+////            ... use(searchResults) ...
+//        } catch {
+//            print("Error with request: \(error)")
+//        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,26 +1,164 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hOS-cx-zf8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="77p-tH-5pI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hOS-cx-zf8" customClass="ViewController" customModule="FX_Currency" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="lLh-f0-PD5"/>
+                        <viewControllerLayoutGuide type="bottom" id="GyS-Rm-T4Q"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="CNw-57-tTl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FX Currency" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="129-8m-cew">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="129-8m-cew" secondAttribute="height" multiplier="200:21" id="JO7-au-tOt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login to access your preferences." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-Dr-5fS">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="d9B-Dr-5fS" secondAttribute="height" multiplier="49:3" id="6dB-uO-AcN"/>
+                                    <constraint firstAttribute="width" constant="343" id="okA-fP-NXN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wal-OA-zu9">
+                                <color key="backgroundColor" red="0.79387646913528442" green="0.11326923221349716" blue="0.075511224567890167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wal-OA-zu9" secondAttribute="height" multiplier="5:2" id="gwB-0p-uuS"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Baf-Iy-gag" kind="show" id="Oci-qY-bIG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please register to maintain preferences." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0em-lZ-sTe">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0em-lZ-sTe" secondAttribute="height" multiplier="79:5" id="oLi-Pe-WgQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="430-Qg-Dk5">
+                                <color key="backgroundColor" red="0.79387646913528442" green="0.11326923221349716" blue="0.075511224567890167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="430-Qg-Dk5" secondAttribute="height" multiplier="5:2" id="AlY-eP-0Nr"/>
+                                </constraints>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="129-8m-cew" firstAttribute="centerX" secondItem="CNw-57-tTl" secondAttribute="centerX" id="AWM-kg-2lq"/>
+                            <constraint firstItem="wal-OA-zu9" firstAttribute="top" secondItem="d9B-Dr-5fS" secondAttribute="bottom" constant="30" id="Bds-PA-GNa"/>
+                            <constraint firstItem="0em-lZ-sTe" firstAttribute="top" secondItem="wal-OA-zu9" secondAttribute="bottom" constant="100" id="D2C-GT-X2K"/>
+                            <constraint firstItem="wal-OA-zu9" firstAttribute="centerX" secondItem="CNw-57-tTl" secondAttribute="centerX" id="Set-aN-VMG"/>
+                            <constraint firstItem="430-Qg-Dk5" firstAttribute="centerX" secondItem="CNw-57-tTl" secondAttribute="centerX" id="Uf0-Ep-n7U"/>
+                            <constraint firstItem="d9B-Dr-5fS" firstAttribute="top" secondItem="129-8m-cew" secondAttribute="bottom" constant="60" id="Zxl-T2-rrH"/>
+                            <constraint firstItem="d9B-Dr-5fS" firstAttribute="centerX" secondItem="CNw-57-tTl" secondAttribute="centerX" id="sLJ-cz-xhX"/>
+                            <constraint firstItem="129-8m-cew" firstAttribute="top" secondItem="lLh-f0-PD5" secondAttribute="bottom" constant="40" id="tAP-a2-9oR"/>
+                            <constraint firstItem="430-Qg-Dk5" firstAttribute="top" secondItem="0em-lZ-sTe" secondAttribute="bottom" constant="30" id="uv7-53-ZAK"/>
+                            <constraint firstItem="0em-lZ-sTe" firstAttribute="centerX" secondItem="CNw-57-tTl" secondAttribute="centerX" id="vHD-0j-unT"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCu-8e-bsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="792.95352323838085"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="84f-cm-mP7">
+            <objects>
+                <viewController id="Baf-Iy-gag" customClass="RegisterViewController" customModule="FX_Currency" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ao5-vq-bY1"/>
+                        <viewControllerLayoutGuide type="bottom" id="FxD-Gj-0hH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lfZ-Qd-htZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-zb-5dT" customClass="JVFloatLabeledTextField">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KT8-ss-Ncl"/>
+                                    <constraint firstAttribute="width" secondItem="mOC-zb-5dT" secondAttribute="height" multiplier="29:4" id="Tet-Gu-K7F"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" red="0.79387646913528442" green="0.11326923221349716" blue="0.075511224567890167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keepBaseline" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKa-ty-38u" customClass="JVFloatLabeledTextField">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="blU-Zv-JAO"/>
+                                    <constraint firstAttribute="width" secondItem="VKa-ty-38u" secondAttribute="height" multiplier="29:4" id="qKa-6a-WsO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" red="0.79387646913528442" green="0.11326923221349716" blue="0.075511224567890167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keepBaseline" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mOC-zb-5dT" firstAttribute="top" secondItem="ao5-vq-bY1" secondAttribute="bottom" constant="30" id="5yz-0P-bfu"/>
+                            <constraint firstItem="VKa-ty-38u" firstAttribute="centerX" secondItem="lfZ-Qd-htZ" secondAttribute="centerX" id="CEd-9k-hpG"/>
+                            <constraint firstItem="mOC-zb-5dT" firstAttribute="centerX" secondItem="lfZ-Qd-htZ" secondAttribute="centerX" id="DWf-Pr-Grh"/>
+                            <constraint firstItem="VKa-ty-38u" firstAttribute="top" secondItem="mOC-zb-5dT" secondAttribute="bottom" constant="30" id="OnM-jV-Se5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtPassword" destination="VKa-ty-38u" id="bga-6M-bxw"/>
+                        <outlet property="txtUserName" destination="mOC-zb-5dT" id="Qqo-BR-DLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urE-92-M04" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="790.76086956521749"/>
         </scene>
     </scenes>
 </document>
